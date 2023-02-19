@@ -1,0 +1,610 @@
+/*
+ * Click nbfs://nbhost/SystemFileSystem/Templates/Licenses/license-default.txt to change this license
+ * Click nbfs://nbhost/SystemFileSystem/Templates/javafx/FXMLController.java to edit this template
+ */
+package edu.connexion3A18.entities.GUI;
+
+import java.net.URL;
+import java.util.ResourceBundle;
+import javafx.fxml.FXML;
+import javafx.fxml.Initializable;
+import javafx.scene.control.TextField;
+
+/**
+ * FXML Controller class
+ *
+ * @author GOLDEN
+ */
+public class DetailsController implements Initializable {
+
+    @FXML
+    private TextField resultanom;
+    @FXML
+    private TextField resultaprenom;
+
+    /**
+     * Initializes the controller class.<?xml version="1.0" encoding="UTF-8"?>/*
+ * Click nbfs://nbhost/SystemFileSystem/Templates/Licenses/license-default.txt to change this license
+ * Click nbfs://nbhost/SystemFileSystem/Templates/javafx/FXMain.java to edit this template
+ */
+package edu.connexion3A18.entities.GUI;
+
+import java.io.IOException;
+import java.util.logging.Level;
+import java.util.logging.Logger;
+import javafx.application.Application;
+import javafx.event.ActionEvent;
+import javafx.event.EventHandler;
+import javafx.fxml.FXMLLoader;
+import javafx.scene.Parent;
+import javafx.scene.Scene;
+import javafx.scene.control.Button;
+import javafx.scene.layout.StackPane;
+import javafx.stage.Stage;
+
+/**
+ *
+ * @author GOLDEN
+ */
+public class Mainpage extends Application {
+    
+    @Override
+    public void start(Stage primaryStage) {
+        
+        try {
+            Parent root = FXMLLoader.load(getClass().getResource("Inscription.fxml"));/*
+ * To change this license header, choose License Headers in Project Properties.
+ * To change this template file, choose Tools | Templates
+ * and open the template in the editor.
+ */
+package edu.connexion3A18.entities;
+
+
+import javafx.scene.control.Button;
+import javafx.scene.control.ComboBox;
+import javafx.scene.control.TextField;
+
+/**
+ *
+ * @author User
+ */
+
+public class Evenement {
+    private  int idEvent;
+    private  String NomEvent;
+    private  String AdresseEvent;
+    private  int CapaciteEvent;
+    private  int nbrTicketAchete;
+    private  String DateDebutEvent;
+    private  String DateFinEvent;
+    private  String DescriptionEvent;
+    private  float PrixEntre;
+    private  String image1;
+   // public int getnbrTicketAchete;
+    public int getnbrTicketAchete;
+    
+    public Evenement(){
+
+}
+
+    public Evenement(int idEvent, String NomEvent, String AdresseEvent, int CapaciteEvent, int nbrTicketAchete, String DateDebutEvent, String DateFinEvent, String DescriptionEvent, float PrixEntre, String image1) {
+        this.idEvent = idEvent;
+        this.NomEvent = NomEvent;
+        this.AdresseEvent = AdresseEvent;
+        this.CapaciteEvent = CapaciteEvent;
+        this.nbrTicketAchete = nbrTicketAchete;
+        this.DateDebutEvent = DateDebutEvent;
+        this.DateFinEvent = DateFinEvent;
+        this.DescriptionEvent = DescriptionEvent;
+        this.PrixEntre = PrixEntre;
+        this.image1 = image1;
+    }
+
+    public Evenement(String NomEvent, String AdresseEvent, int CapaciteEvent, int nbrTicketAchete, String DateDebutEvent, String DateFinEvent, String DescriptionEvent, float PrixEntre, String image1) {
+        this.NomEvent = NomEvent;
+        this.AdresseEvent = AdresseEvent;
+        this.CapaciteEvent = CapaciteEvent;
+        this.nbrTicketAchete = nbrTicketAchete;
+        this.DateDebutEvent = DateDebutEvent;
+        this.DateFinEvent = DateFinEvent;
+        this.DescriptionEvent = DescriptionEvent;
+        this.PrixEntre = PrixEntre;
+        this.image1 = image1;
+    }
+    
+    
+
+    public Evenement(int idEvent, String NomEvent, String AdresseEvent, int CapaciteEvent, int nbrTicketAchete, String DateDebutEvent, String DateFinEvent, String DescriptionEvent, float PrixEntre) {
+        this.idEvent = idEvent;
+        this.NomEvent = NomEvent;
+        this.AdresseEvent = AdresseEvent;
+        this.CapaciteEvent = CapaciteEvent;
+        this.nbrTicketAchete = nbrTicketAchete;
+        this.DateDebutEvent = DateDebutEvent;
+        this.DateFinEvent = DateFinEvent;
+        this.DescriptionEvent = DescriptionEvent;
+        this.PrixEntre = PrixEntre;
+    }
+
+
+
+    public int getIdEvent() {
+        return idEvent;
+    }
+
+    public String getNomEvent() {
+        return NomEvent;
+    }
+
+    public String getAdresseEvent() {
+        return AdresseEvent;
+    }
+
+    /**
+     *
+     * @return
+     */
+    public int getCapaciteEvent() {
+        return CapaciteEvent;
+    }
+
+    public String getDateDebutEvent() {
+        return DateDebutEvent;
+    }
+
+    public String getDateFinEvent() {
+        return DateFinEvent;
+    }
+
+
+    public String getDescriptionEvent() {
+        return DescriptionEvent;
+    }
+
+    public float getPrixEntre() {
+        return PrixEntre;
+    }
+
+    public void setidEvent(int id) {
+        this.idEvent = id;
+    }
+
+    public void setNomEvent(String NomEvent) {
+        this.NomEvent = NomEvent;
+    }
+
+    public void setAdresseEvent(String AdresseEvent) {
+        this.AdresseEvent = AdresseEvent;
+    }
+
+    public void setCapaciteEvent(int CapaciteEvent) {
+        this.CapaciteEvent = CapaciteEvent;
+    }
+
+    public void setDateDebutEvent(String DateDebutEvent) {
+        this.DateDebutEvent = DateDebutEvent;
+    }
+
+    public void setDateFinEvent(String DateFinEvent) {
+        this.DateFinEvent = DateFinEvent;
+    }
+
+    public void setDescriptionEvent(String CategorieEvent) {
+        this.DescriptionEvent = DescriptionEvent;
+    }
+
+    public void setPrixEntre(float PrixEntre) {
+        this.PrixEntre = PrixEntre;
+    }
+
+    @Override
+    public String toString() {
+        return  NomEvent;
+    }
+
+    
+
+    public int getNbrTicketAchete() {
+        return nbrTicketAchete;
+    }
+
+    public void setNbrTicketAchete(int nbrTicketAchete) {
+        this.nbrTicketAchete = nbrTicketAchete;
+    }/*
+ * Click nbfs://nbhost/SystemFileSystem/Templates/Licenses/license-default.txt to change this license/*
+ * Click nbfs://nbhost/SystemFileSystem/Templates/Licenses/license-default.txt to change this license
+ * Click nbfs://nbhost/SystemFileSystem/Templates/Classes/Class.java to edit this template
+ */
+package edu.connexion3A18.services;
+import edu.connexion3A18.entities.Evenement;
+import edu.connexion3A18.interfaces.EntityCRUD;
+import java.sql.Connection;
+import java.sql.PreparedStatement;
+import java.sql.ResultSet;
+import java.sql.SQLException;
+import java.sql.Statement;
+import java.util.ArrayList;
+import java.util.List;
+import java.util.Scanner;
+import javafx.collections.FXCollections;
+import javafx.collections.ObservableList;
+
+
+import edu.connexion3A18.utils.Myconnection;
+
+
+/**
+ *
+ * @author GOLDEN
+ */
+
+
+
+public class EvenementCRUD {
+    Connection cnx2;
+
+    public EvenementCRUD() {
+        cnx2 = Myconnection.getInstance().getCnx();
+    }
+
+    public void ajouterEvenement(Evenement E){
+        try {
+            String requete2 = "INSERT INTO Evenement (NomEvent,AdresseEvent,CapaciteEvent,nbrTicketAchete,DateDebutEvent,DateFinEvent,DescriptionEvent,PrixEntre,image1)"
+                    + "VALUES(?,?,?,?,?,?,?,?,?)";
+           PreparedStatement pst =cnx2.prepareStatement(requete2);
+            pst.setString(1, E.getNomEvent());
+            pst.setString(2, E.getAdresseEvent());
+            pst.setInt(3, E.getCapaciteEvent());
+            pst.setInt(4, E.getnbrTicketAchete);
+            pst.setString(5, E.getDateDebutEvent());
+            pst.setString(6,  E.getDateFinEvent());
+             pst.setString(7, E.getDescriptionEvent());
+            //pst.setString(7, E.getDescriptionEvent());
+            pst.setFloat(8, E.getPrixEntre());
+            String uri = fichier.path1;
+     
+            pst.setString(9, uri);
+            pst.executeUpdate();
+            System.out.println("Evènement ajouté avec succés!!!");
+
+        } catch (SQLException ex) {
+            System.err.println(ex.getMessage());
+        }
+    }
+
+    public ObservableList<Evenement> afficherEvenemets() {
+        ObservableList<Evenement> myList = FXCollections.observableArrayList();
+        try {
+            String requete3 = "SELECT * FROM Evenement";
+            Statement st = cnx2.createStatement();
+            ResultSet rs = st.executeQuery(requete3);
+            while (rs.next()) {
+                Evenement e = new Evenement();
+                e.setidEvent(rs.getInt("idEvent"));
+                e.setNomEvent(rs.getString("NomEvent"));
+                e.setAdresseEvent(rs.getString("AdresseEvent"));
+                e.setCapaciteEvent(rs.getInt("CapaciteEvent"));
+                e.setNbrTicketAchete(rs.getInt("nbrTicketAchete"));
+                e.setDateDebutEvent(rs.getString("DateDebutEvent"));
+                e.setDateFinEvent(rs.getString("DateFinEvent"));
+                
+                e.setDescriptionEvent(rs.getString("DescriptionEvent"));
+                e.setPrixEntre(rs.getFloat("PrixEntre"));
+                e.setImage1(rs.getString("image1"));
+                
+                myList.add(e);
+            }
+
+        } catch (SQLException ex) {
+            System.err.println(ex.getMessage());
+
+        }
+             return myList;
+    }
+
+    
+     public ObservableList<Evenement> afficherEvenemets2() {
+        ObservableList<Evenement> myList = FXCollections.observableArrayList();
+        try {
+            String requete3 = "SELECT * FROM Evenement";
+            Statement st = cnx2.createStatement();
+            ResultSet rs = st.executeQuery(requete3);
+            while (rs.next()) {
+                Evenement e = new Evenement();
+                e.setNomEvent(rs.getString("NomEvent"));
+                e.setAdresseEvent(rs.getString("AdresseEvent"));
+                e.setCapaciteEvent(rs.getInt("CapaciteEvent"));
+                e.setNbrTicketAchete(rs.getInt("nbrTicketAchete"));
+                e.setDateDebutEvent(rs.getString("DateDebutEvent"));
+                e.setDateFinEvent(rs.getString("DateFinEvent"));
+                
+                e.setDescriptionEvent(rs.getString("DescriptionEvent"));
+                e.setPrixEntre(rs.getFloat("PrixEntre"));
+                e.setImage1(rs.getString("Image1"));
+                myList.add(e);
+            }
+
+        } catch (SQLException ex) {
+            System.err.println(ex.getMessage());
+
+        }
+             return myList;
+    }
+    public void supprimerEvent(int a ) throws SQLException {
+
+        try {
+            //System.out.println("Entrez l'Id de l'évènement supprimer");
+            //Scanner sc5 = new Scanner(System.in);
+            //String a = sc5.nextLine();
+
+            String requete4 = "delete from Evenement where idEvent=" + a;
+            PreparedStatement ste = cnx2.prepareStatement(requete4);
+            ste.executeUpdate();
+
+            System.out.println("Evènement supprimé aves succeés");
+        } catch (SQLException ex) {
+            System.out.println(ex);
+        }
+    }
+
+    public void ChercherEvenement(int id) throws SQLException {
+        System.out.println("entre l'Id de l'évènement à Chercher");
+        Scanner sc = new Scanner(System.in);
+        String h = sc.nextLine();
+        List<Evenement> Evenement = new ArrayList<>();
+
+        try {
+            String sql = "SELECT * FROM Evenement where idEvent=" + h;
+           // System.out.println("==<>>>>> " + sql);
+            ResultSet rs;
+            PreparedStatement ste;
+            ste = cnx2.prepareStatement(sql);
+            rs = ste.executeQuery();
+            while (rs.next()) {
+                Evenement e = new Evenement();
+                e.setidEvent(rs.getInt(1));
+                e.setNomEvent(rs.getString("NomEvent"));
+                e.setAdresseEvent(rs.getString("AdresseEvent"));
+                e.setCapaciteEvent(rs.getInt("CapaciteEvent"));
+                e.setDateDebutEvent(rs.getString("DateDebutEvent"));
+                e.setDateFinEvent(rs.getString("DateFinEvent"));
+                
+                e.setDescriptionEvent(rs.getString("DescriptionEvent"));
+                e.setPrixEntre(rs.getFloat("PrixEntre"));
+                System.out.println(e);
+                Evenement.add(e);
+            }
+        } catch (SQLException ex) {
+            System.out.println(ex.getMessage());
+
+        }
+    }
+
+
+
+   public void ModifierEvenement (Evenement e, int id) {
+        try {
+            String sql = "UPDATE Evenement SET NomEvent=? ,AdresseEvent=? ,CapaciteEvent=?,nbrTicketAchete=?,DateDebutEvent=?,DateFinEvent=?,TypeEvent=?,CategorieEvent=?,PrixEntre=?,image1=? WHERE Evenement.idEvent="+id;
+            PreparedStatement ste = cnx2.prepareStatement(sql);
+            String uri = fichier.path1;
+//            uri= uri.replace("\\", "\\\\");
+            ste.setString(1, e.getNomEvent());
+            ste.setString(2, e.getAdresseEvent());
+            ste.setInt(3, e.getCapaciteEvent());
+            ste.setInt(4, e.getNbrTicketAchete());
+            ste.setString(5,  e.getDateDebutEvent());
+            ste.setString(6, e.getDateFinEvent());
+            ste.setString(7, e.getDescriptionEvent());
+           // ste.setString(7, e.getDescriptionEvent());
+            ste.setFloat(8, e.getPrixEntre());
+            ste.setString(9, uri);/*
+ * Click nbfs://nbhost/SystemFileSystem/Templates/Licenses/license-default.txt to change this license
+ * Click nbfs://nbhost/SystemFileSystem/Templates/Classes/Class.java to edit this template
+ */
+package edu.connexion3A18.tests;
+
+import edu.connexion3A18.entities.Evenement;
+import edu.connexion3A18.services.EvenementCRUD;
+import edu.connexion3A18.utils.Myconnection;
+import java.sql.SQLException;
+import java.util.Date;
+
+/**
+ *
+ * @author Aziza
+ */
+public class MainClass {
+    public static void main(String[] args) throws SQLException {/*
+ * Click nbfs://nbhost/SystemFileSystem/Templates/Licenses/license-default.txt to change this license
+ * Click nbfs://nbhost/SystemFileSystem/Templates/Classes/Class.java to edit this template
+ */
+package edu.connexion3A18.utils;
+import java.sql.Connection;
+import java.sql.DriverManager;
+import java.sql.SQLException;
+
+/**
+ *
+ * @author Aziza
+ */
+public class Myconnection {
+    private String URL = "jdbc:mysql://localhost:3306/esprit3a18";
+    private String Login = "root";
+    private String Password = "";
+    private Connection cnx;
+    private static Myconnection instance;
+    
+    public Myconnection(){
+        try {
+            cnx = DriverManager.getConnection(URL, Login, Password);
+            System.out.println("Connexion Réussite");
+            
+        } catch (SQLException ex) {
+            System.err.println(ex.toString());
+        }
+    }
+    
+    public Connection getCnx(){
+       
+        return cnx;
+    }
+    public static Myconnection getInstance(){
+            if(instance==null){
+        instance = new Myconnection();}
+    return instance;
+    }
+}
+
+        Myconnection con = new Myconnection();
+      
+EvenementCRUD ecd = new EvenementCRUD();
+       Date df = new Date();
+       
+      Evenement e2 = new Evenement("Eventbook","gabes",5650,400,"22/02/2022 à 10.00h","22/02/2022 à 12h","hfuyfhdf", 50,"hh");
+     
+    ecd.ajouterEvenement(e2);
+     //ecd.ModifierEvenement(e2, 9);
+   // System.out.println(ecd.afficherEvenemets2());
+    // ecd.ChercherEvenement(9);
+      // System.out.println(ecd.ModifierEvenement(e2, 1));
+     // System.out.println(ecd.afficherEvenemets());
+     ecd.supprimerEvent(5);
+       
+    
+       
+    }
+    }
+
+
+            ste.executeUpdate();
+            System.out.println("Modification effectuée avec succés !!");
+        } catch (SQLException ex) {
+            System.out.println(ex.getMessage());
+        }
+        /*
+ * Click nbfs://nbhost/SystemFileSystem/Templates/Licenses/license-default.txt to change this license
+ * Click nbfs://nbhost/SystemFileSystem/Templates/Classes/Class.java to edit this template
+ */
+package edu.connexion3A18.services;
+
+/**
+ *
+ * @author GOLDEN
+ */
+class fichier {
+    public static String path1;
+}
+
+    }
+    
+    
+    
+     
+       
+ 
+      
+           
+   
+    
+
+}
+    
+
+
+ * Click nbfs://nbhost/SystemFileSystem/Templates/Classes/Interface.java to edit this template
+ */
+package edu.connexion3A18.interfaces;
+
+import java.util.List;
+
+/**
+ *
+ * @author Aziza
+ * @param <T>
+ */
+public interface EntityCRUD<T> {
+    public void addEntity(T t);
+    public List<T> entitiesList();
+}
+
+
+    public Object toLowerCase() {
+        throw new UnsupportedOperationException("Not supported yet."); //To change body of generated methods, choose Tools | Templates.
+    }
+
+    public String getImage1() {
+        return image1;
+    }
+
+    public void setImage1(String image1) {
+        this.image1 = image1;
+    }
+
+   // public String getDescriptionEvent() {
+      //  throw new UnsupportedOperationException("Not supported yet."); // Generated from nbfs://nbhost/SystemFileSystem/Templates/Classes/Code/GeneratedMethodBody
+
+    
+    
+    
+    
+}
+            
+            Scene scene = new Scene(root);
+            
+            primaryStage.setTitle("Hello World!");
+            primaryStage.setScene(scene);
+            primaryStage.show();
+        } catch (IOException ex) {
+            Logger.getLogger(Mainpage.class.getName()).log(Level.SEVERE, null, ex);
+        }
+    }
+
+    /**
+     * @param args the command line arguments
+     */
+    public static void main(String[] args) {
+        launch(args);
+    }
+    
+}
+
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.layout.AnchorPane?>
+
+
+<AnchorPane id="AnchorPane" prefHeight="400.0" prefWidth="600.0" xmlns:fx="http://javafx.com/fxml/1" xmlns="http://javafx.com/javafx/8.0.171" fx:controller="edu.connexion3A18.entities.GUI.InscriptionController">
+   <children>
+      <Label layoutX="67.0" layoutY="95.0" prefHeight="26.0" prefWidth="113.0" text="nom" textFill="#f50c0c" />
+      <Label layoutX="67.0" layoutY="200.0" prefHeight="26.0" prefWidth="69.0" text="prenom" textFill="#fc0909" />
+      <TextField fx:id="tfnom" layoutX="214.0" layoutY="93.0" />
+      <TextField fx:id="tfprenom" layoutX="214.0" layoutY="197.0" />
+      <Button fx:id="btn" layoutX="430.0" layoutY="317.0" mnemonicParsing="false" onAction="#savepersonne" prefHeight="55.0" prefWidth="140.0" text="valide" textFill="#0707fc" />
+   </children>
+</AnchorPane>
+
+     */
+    @Override
+    public void initialize(URL url, ResourceBundle rb) {
+        // TODO
+    }    
+
+    public TextField getResultanom() {  
+        return resultanom;
+    }
+
+    public TextField getResultaprenom() {
+        return resultaprenom;
+    }
+
+    public void setResultanom(TextField resultanom) {
+        this.resultanom = resultanom;
+    }
+
+    public void setResultaprenom(TextField resultaprenom) {
+        this.resultaprenom = resultaprenom;
+    }
+      
+}
